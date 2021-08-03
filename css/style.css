@@ -9108,6 +9108,77 @@ body {
   min-height: 100vh;
 }
 
+.swot-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+  flex-wrap: wrap;
+}
+.swot-container .swot-item {
+  width: 23%;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 12px;
+  position: relative;
+}
+@media (max-width: 1092px) {
+  .swot-container .swot-item {
+    width: 48%;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .swot-container .swot-item {
+    width: 100%;
+  }
+}
+.swot-container .swot-heading .swot-title {
+  padding: 0 6px;
+  background: white;
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+  top: -12px;
+  right: 28px;
+}
+.swot-container .swot-heading .swot-title span {
+  font-weight: bold;
+  color: #2668d9;
+}
+.swot-container .swot-heading .add-swot {
+  margin: 0 6px;
+  background: white;
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+  top: -15px;
+  left: 28px;
+}
+.swot-container ul {
+  margin: 0;
+  margin-top: 12px;
+  padding: 14px 0;
+  list-style: none;
+}
+.swot-container ul li {
+  position: relative;
+  padding-right: 24px;
+  margin: 18px 0;
+}
+.swot-container .actions {
+  margin-top: 10px;
+}
+.swot-container .actions a {
+  color: #c0c0c0;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+.swot-container .actions a:hover {
+  color: #2668d9;
+}
+
 .progress-circle-wrapper {
   width: 100%;
   height: 300px;
