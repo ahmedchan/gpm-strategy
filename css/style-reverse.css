@@ -9122,6 +9122,30 @@ body {
   padding: 12px;
   position: relative;
 }
+.swot-container .swot-item.swot-streanth {
+  border-color: #2668d9;
+}
+.swot-container .swot-item.swot-streanth .swot-heading .btn {
+  border-color: #2668d9 !important;
+}
+.swot-container .swot-item.swot-weakness {
+  border-color: #f7ce65;
+}
+.swot-container .swot-item.swot-weakness .swot-heading .btn {
+  border-color: #f7ce65 !important;
+}
+.swot-container .swot-item.swot-opportunity {
+  border-color: #91c58b;
+}
+.swot-container .swot-item.swot-opportunity .swot-heading .btn {
+  border-color: #91c58b !important;
+}
+.swot-container .swot-item.swot-thrites {
+  border-color: #ea6e6a;
+}
+.swot-container .swot-item.swot-thrites .swot-heading .btn {
+  border-color: #ea6e6a !important;
+}
 @media (max-width: 1092px) {
   .swot-container .swot-item {
     width: 48%;
