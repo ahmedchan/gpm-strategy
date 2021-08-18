@@ -10362,6 +10362,12 @@ div.dt-buttons button {
   bottom: 80px;
   z-index: 3;
 }
+.chatbot .open-chatbot {
+  background-color: white;
+}
+.chatbot .open-chatbot:hover {
+  background-color: #2668d9;
+}
 .chatbot .chatbot-container {
   width: 340px;
   height: 460px;
@@ -10421,13 +10427,24 @@ div.dt-buttons button {
 .chatbot .chatbot-container .chatbot-content .msg.msg-system {
   border: 0;
   margin: 12px 0;
-  text-align: center;
 }
-.chatbot .chatbot-container .chatbot-content .msg.msg-system .msg-content {
-  max-width: 90%;
+.chatbot .chatbot-container .chatbot-content .msg.msg-system .msg-content.msg-auto-system {
+  width: 70% !important;
+  padding: 0;
+  margin: 0;
+  float: left !important;
+  border: 1px solid #e2e2e2 !important;
+}
+.chatbot .chatbot-container .chatbot-content .msg.msg-system .msg-content.msg-auto-system .msg-heading {
+  padding: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.chatbot .chatbot-container .chatbot-content .msg.msg-system .msg-content.msg-auto-system .msg-body .msg-content {
+  max-width: 100%;
+  cursor: pointer;
+  margin: 8px;
   float: none;
-  border: 0;
-  margin: 0 auto;
+  border-color: #e2e2e2;
 }
 .chatbot .chatbot-container .chatbot-content .msg.msg-agent .msg-content {
   background-color: #FFFFFF;
@@ -10441,20 +10458,6 @@ div.dt-buttons button {
   border-width: 1px;
   border-style: solid;
   border-radius: 12px;
-}
-.chatbot .chatbot-container .chatbot-content .msg .msg-auto-system {
-  width: 70%;
-  padding: 0;
-}
-.chatbot .chatbot-container .chatbot-content .msg .msg-auto-system .msg-heading {
-  padding: 10px;
-  border-bottom: 1px solid #e2e2e2;
-}
-.chatbot .chatbot-container .chatbot-content .msg .msg-auto-system .msg-body .msg-content {
-  max-width: 100%;
-  cursor: pointer;
-  margin: 8px;
-  float: none;
 }
 .chatbot .chatbot-container .chatbot-input {
   height: 50px;

@@ -30,7 +30,7 @@ var chatbot = (function($){
 
 	var init = function () {
 		scrollChatToBottom();
-		$startChatbot.attr('disabled', isChatOpend() ? true : false).on('click', startChat);
+		$startChatbot.addClass(isChatOpend() ? 'active' : '').on('click', toggleChatbox);
 		$addMessage.on('keydown', sendMessage);
 		$systemMsg.on('click', applySystemMsg);
 		$closeChatbot.on('click', closeChat);
@@ -60,12 +60,21 @@ var chatbot = (function($){
 	var closeChat = function (evt) {
 		evt && evt.preventDefault();
 		$chat.addClass('hidden');
-		$startChatbot.attr('disabled', false)
+		$startChatbot.removeClass('active')
+	}
+
+	var toggleChatbox = function (evt) {
+		evt && evt.preventDefault();
+		if (isChatOpend()) {
+			closeChat(evt)
+		} else {
+			startChat(evt)
+		}
 	}
 
 	var startChat = function (evt) {
 		evt && evt.preventDefault();
-		$(evt.target).attr('disabled', true);
+		$(evt.target).addClass('active');
 		$chat.removeClass('hidden');
 	}
 
